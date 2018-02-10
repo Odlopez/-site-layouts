@@ -1,0 +1,40 @@
+.Layer-23, .Layer-24, .Layer-25, .Layer-26, .Layer-27, .Layer-28{
+	background: url(sprites.png) no-repeat;
+}
+
+.Layer-23{
+	background-position: 0 0;
+	width: 100px;
+	height: 68px;
+}
+
+.Layer-24{
+	background-position: -100px -7px ;
+	width: 100px;
+	height: 52px;
+}
+
+.Layer-25{
+	background-position: -200px -4px ;
+	width: 120px;
+	height: 61px;
+}
+
+.Layer-26{
+	background-position: -319.989990234375px -11.999992370605469px ;
+	width: 99px;
+	height: 44px;
+}
+
+.Layer-27{
+	background-position: -419px -5.9999847412109375px ;
+	width: 120px;
+	height: 56px;
+}
+
+.Layer-28{
+	background-position: -540px -16.999984741210938px ;
+	width: 100px;
+	height: 33px;
+}
+

@@ -134,7 +134,7 @@ body {
         height: 24px;
         display: block;
         margin-top: 22px;
-        background: url("../img/logo-text.png") no-repeat 0 8px;
+        background: url("../img/logo-footer.png") no-repeat;
         
         &-link {
             width: 100%;
@@ -1117,6 +1117,31 @@ footer {
     &__social {
         width: @small-cell * 6;
         height: @small-cell;
-        background: url(../img/Social.png) no-repeat 50% 100%;
+        display: flex;
+       justify-content: space-between;
+       align-items: center;
+       
+       & a {
+          display: block;
+          width: @small-cell;
+          height: inherit;
+          background: url(../img/Social.png) no-repeat;
+          
+          &:first-child {
+             background-position: 0 50%;
+          }
+          
+          &:nth-child(2) {
+             background-position: -48px 50%;
+          }
+          
+          &:nth-child(3) {
+             background-position: -98.5px 50%;
+          }
+          
+          &:last-child {
+             background-position: -148px 50%;
+          }
+       }
     }
 }

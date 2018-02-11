@@ -100,7 +100,7 @@ body {
   height: 24px;
   display: block;
   margin-top: 22px;
-  background: url("../img/logo-text.png") no-repeat 0 8px;
+  background: url("../img/logo-footer.png") no-repeat;
 }
 .navigation__logo-link {
   width: 100%;
@@ -937,5 +937,25 @@ footer {
 .footer__bottom__social {
   width: 180px;
   height: 30px;
-  background: url(../img/Social.png) no-repeat 50% 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__bottom__social a {
+  display: block;
+  width: 30px;
+  height: inherit;
+  background: url(../img/Social.png) no-repeat;
+}
+.footer__bottom__social a:first-child {
+  background-position: 0 50%;
+}
+.footer__bottom__social a:nth-child(2) {
+  background-position: -48px 50%;
+}
+.footer__bottom__social a:nth-child(3) {
+  background-position: -98.5px 50%;
+}
+.footer__bottom__social a:last-child {
+  background-position: -148px 50%;
 }

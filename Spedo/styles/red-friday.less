@@ -1,0 +1,70 @@
+// out: null
+
+.red-friday {
+   height: 990px;
+   width: @content;
+   margin-right: @indent;
+   margin-left: @indent;
+   background: #fff url(../img/red-friday/red-friday-bg.png) no-repeat right bottom;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   h1 {
+      .without_indentation;
+      text-transform: uppercase;
+      display: inline-block;
+      width: 525px;
+      font-family: Georgia;
+      color:  #000000;
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 2.7px;
+      line-height: 64px;
+      margin-top: auto;
+   }
+   p {
+     .without_indentation;
+      display: inline-block;
+      width: 584px;
+      height: 260px;
+      font-family: Raleway;
+      color:  #6e6e6e;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 30px;
+      margin-top: 38px;
+      margin-bottom: 119px;
+      letter-spacing: 2px;
+   }
+   a {
+      text-decoration: none;
+      display: inline-block;
+      width: 191px;
+      height: 63px;
+      text-transform: uppercase;
+      font-family: Georgia;
+      color:  #ffffff;
+      font-size: 14px;
+      letter-spacing: 1.05px;
+      line-height: 63px;
+      text-align: center;
+      position: relative;
+      background-color: black;
+      margin-bottom: auto;
+      &::after {
+         content: "";
+         display: block;
+         border-top: 1px solid #fff;
+         border-right: 1px solid #fff;
+         width: 5px;
+         height: 5px;
+         position: absolute;
+         right: 25px;
+         top: 28px;
+         transform: rotate(45deg);
+      }
+      &:hover {
+         background-color: #87022d;
+      }
+   }
+}

@@ -1,0 +1,71 @@
+   //VARIABLES
+
+@small-cell: 15px;
+@big-cell: 65px;
+@cell: @big-cell + @small-cell * 2;
+@width: @big-cell * 30 - @small-cell * 2;
+@indent: @big-cell * 6;
+@content: @width - @indent * 2;
+
+
+   //ADMIXTURES
+
+.menu {
+   display: flex;
+   list-style-type: none;
+   justify-content: space-between;
+}
+
+.clearfix::before {
+    display: table;
+    width: 100%;
+    content: "";
+    clear: both;
+}
+
+.without_indentation {
+   margin: 0;
+   padding: 0;
+}
+
+   //FONTS
+
+@font-face {
+    font-family: Raleway, sans-serif;
+    @import url(https://fonts.googleapis.com/css?family=Raleway:500,500i);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Cairo, sans-serif;
+    @import url(https://fonts.googleapis.com/css?family=Cairo);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: FontAwesome;
+    src: url(../fonts/fontawesome/FontAwesome.otf);
+}   
+
+@font-face {
+    font-family: Montserrat, sans-serif;
+    @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+    font-weight: 400;
+}
+
+   //GLOBAL
+
+body {
+   margin: 0 auto;
+   width: @width;
+}
+
+   //IMPORTS
+
+@import "header-top";
+@import "header-bottom";
+@import "news";
+@import "show";
+@import "red-friday";
+@import "feedback";
+@import "footer";

@@ -1,0 +1,62 @@
+// out: null
+
+.feedback {
+   display: flex;
+   width: @content;
+   margin: 0 @indent;
+   height: 264px;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #fff;
+   &__text {
+      text-transform: uppercase;
+      font-family: Cairo;
+      color:  #000000;
+      font-size: 14px;
+      line-height: 18px;
+   }
+   &__form {
+      margin-right: @small-cell * 2;
+      height: 63px;
+      width: 400px;
+   }
+   input[type="email"] {
+      .without_indentation;
+      height: 61px;
+      border: 1px solid #000;
+      width: 260px;
+      font-family: Cairo;
+      color:  #6e6e6e;
+      font-size: 14px;
+      line-height: 61px;
+      display: inline-block;
+      float: left;
+      padding-left: 18px;
+      text-transform: uppercase;
+   }
+   input[type="submit"] {
+      .without_indentation;
+      display: block;
+      height: inherit;
+      width: @small-cell * 8;
+      font-family: Georgia;
+      color:  #ffffff;   
+      font-size: 14px;
+      letter-spacing: 1.05px;
+      line-height: 18px;
+      text-align: center;
+      background-color: #000;
+      border: none;
+      float: right;
+      &:hover {
+         background-color: rgb(135, 2, 45);
+      }
+      &:active {
+         background-color:  rgba(135, 2, 45, .85);
+         outline: none;
+      }
+      &:focus {
+         outline: none;
+      }
+   }
+}

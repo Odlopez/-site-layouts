@@ -1,0 +1,122 @@
+// out: null
+
+.header-top {
+   width: @content;
+   padding: 0 @indent;
+   height: @big-cell + @small-cell * 1.5;
+   background-color: black;
+   align-items: center;
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 0.5px solid #333;
+}
+
+.top-nav-right,
+.top-nav-left {
+   .without_indentation;
+
+   & a {
+      text-decoration: none;
+      font-family: Montserrat;
+      color: #ffffff;
+      font-size: 12px;
+      line-height: 24px;
+      text-transform: uppercase;
+   }
+}
+
+.top-nav-left {
+   align-items: center;
+   height: inherit;
+   width: @big-cell * 6 + @small-cell * 10;
+
+   &__select {
+      text-align-last: center;
+      border: none;
+      background-color: black;
+      font-family: Montserrat;
+      color: #ffffff;
+      font-size: 12px;
+      line-height: 24px;
+      
+      &:focus {
+         outline: none;
+      }
+   }
+
+   &__language {
+      padding-left: @small-cell * 4;
+
+      &::before {
+         content: "";
+         display: block;
+         height: @small-cell;
+         width: @small-cell * 2;
+         position: absolute;
+         background: black url(../img/header/flag.png) no-repeat 50% 0;
+         margin-top: 3px;
+         margin-left: @small-cell * -3;
+      }
+   }
+
+   &__currency {
+      padding-left: @small-cell / 3 * 4;
+      position: relative;
+
+      &::before {
+         content: "$";
+         position: absolute;
+         left: 0;
+         color: #fff;
+      }
+   }
+
+   & :nth-child(3) {
+      padding-left: @small-cell * 2;
+      background: url(../img/header/track.png) no-repeat 0 50%;
+   }
+
+   & :nth-child(4) {
+      padding-left: @small-cell * 2;
+      background: url(../img/header/marker.png) no-repeat 0 50%;
+      background-size: 10%;
+   }
+}
+
+.top-nav-right {
+   align-items: center;
+   height: inherit;
+   width: @cell * 3;
+
+   & :first-child {
+      padding-left: @small-cell / 2;
+   }
+
+   &__shopping-cart {
+      width: @small-cell;
+      height: @small-cell;
+      padding-right: @small-cell * 2;
+      background: url(../img/header/shopping-cart.png) no-repeat;
+      background-size: contain;
+      display: block;
+      position: relative;
+
+
+      &::after {
+         content: "5";
+         display: block;
+         position: absolute;
+         border-radius: 50%;
+         background-color: #fd3131;
+         width: 21px;
+         height: 21px;
+         font-family: Montserrat;
+         color: #ffffff;
+         font-size: 11px;
+         line-height: 21px;
+         text-align: center;
+         left: 7px;
+         top: -17px;
+      }
+   }
+}

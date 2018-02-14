@@ -1,0 +1,67 @@
+// out: null
+
+.footer {
+   display: flex;
+   width: @content - @small-cell * 2;
+   margin-left: @indent + @small-cell;
+   margin-right: @indent + @small-cell;
+   align-items: center;
+   height: @cell * 2 + @small-cell * 2;
+   font-family: Georgia;
+   line-height: 30px;
+   a {
+      text-decoration: none;
+         &:hover {
+            color:  #000000;
+         }
+   }
+   &__logo {
+      color:  #313131;
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 2.25px;
+   }
+   &__nav {
+      text-transform: uppercase;
+      width: 487px;
+      margin-left: auto;
+      a {
+         display: inline-block;
+         text-align: center;
+         font-size: 14px;
+         letter-spacing: 1.05px;
+         color:  #6e6e6e;
+      }
+   }
+   &__social {
+      width: 230px;
+      margin-left: 114px;
+      line-height: 15px;
+      font-size: 14px;
+      letter-spacing: 1.05px;
+      &_follow-us {
+         margin-right: 28px;
+         text-transform: uppercase;
+         color:  #6e6e6e;
+         &:hover {
+            color:  #000000;
+         }
+      }
+      &_facebook {
+         display: block;
+         width: @small-cell;
+         height: @small-cell;
+         background-image: url(../img/facebook.png);
+         background-size: cover;
+         background-position: center center;
+      }
+      &_twitter {
+         display: block;
+         width: @small-cell;
+         height: @small-cell;
+         background-image: url(../img/twitter.png);
+         background-size: cover;
+         background-position: center center;
+      }
+   }
+}

@@ -14,7 +14,6 @@
 .top-nav-right,
 .top-nav-left {
    .without_indentation;
-
    & a {
       text-decoration: none;
       font-family: Montserrat;
@@ -38,7 +37,6 @@
       color: #ffffff;
       font-size: 12px;
       line-height: 24px;
-      
       &:focus {
          outline: none;
       }
@@ -46,7 +44,6 @@
 
    &__language {
       padding-left: @small-cell * 4;
-
       &::before {
          content: "";
          display: block;
@@ -62,24 +59,12 @@
    &__currency {
       padding-left: @small-cell / 3 * 4;
       position: relative;
-
       &::before {
          content: "$";
          position: absolute;
          left: 0;
          color: #fff;
       }
-   }
-
-   & :nth-child(3) {
-      padding-left: @small-cell * 2;
-      background: url(../img/header/track.png) no-repeat 0 50%;
-   }
-
-   & :nth-child(4) {
-      padding-left: @small-cell * 2;
-      background: url(../img/header/marker.png) no-repeat 0 50%;
-      background-size: 10%;
    }
 }
 
@@ -88,7 +73,7 @@
    height: inherit;
    width: @cell * 3;
 
-   & :first-child {
+   & li:first-child {
       padding-left: @small-cell / 2;
    }
 
@@ -96,11 +81,11 @@
       width: @small-cell;
       height: @small-cell;
       padding-right: @small-cell * 2;
-      background: url(../img/header/shopping-cart.png) no-repeat;
-      background-size: contain;
-      display: block;
       position: relative;
-
+      text-align: left;
+      i {
+        .without_indentation;
+      }
 
       &::after {
          content: "5";
@@ -116,7 +101,7 @@
          line-height: 21px;
          text-align: center;
          left: 7px;
-         top: -17px;
+         top: -13px;
       }
    }
 }
